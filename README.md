@@ -1,2 +1,2 @@
-# unstop-clone
-Clone of unstop
+# unstop
+Unstop
