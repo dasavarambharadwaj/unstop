@@ -1,8 +1,8 @@
 function Header() {
     return (
         <>
-            <header className="border-b border-solid border-gray-400">
-                <div className="sticky h-14 top-0 left-0">
+            <header className="h-14">
+                <div className="fixed w-full shadow-md left-0 right-0 top-0">
                     <div className="max-w-7xl mx-auto">
                         <div className="flex justify-between items-center">
                             <div className="flex gap-2 items-center">
