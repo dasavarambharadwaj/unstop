@@ -6,7 +6,9 @@ function Button(props) {
         children,
         type = "default",
         size = "default",
-        fullWidth = false
+        fullWidth = false,
+        onClick = ()=>{},
+        onMouseEnter = () => {}
     } = props
     const typeMap = {
         "primary": "text-white bg-primary border border-solid border-primary",
@@ -14,7 +16,7 @@ function Button(props) {
         "default": ""
     }
     return (
-        <button className={`flex justify-center gap-2 items-center rounded-full ${typeMap[type]} ${fullWidth ? 'w-full' : ''}`}>
+        <button onClick={onClick} onMouseEnter={onMouseEnter} className={`flex justify-center gap-2 items-center p-2 hover:border hover:border-solid hover:border-primary rounded-full ${typeMap[type]} ${fullWidth ? 'w-full' : ''}`}>
             {prefixIcon && (
                 <Icon size={size}>{prefixIcon}</Icon>
             )}
@@ -28,6 +30,8 @@ Button.propTypes = {
     prefixIcon: PropTypes.string,
     children: PropTypes.string,
     type: PropTypes.string,
-    fullWidth: PropTypes.bool
+    fullWidth: PropTypes.bool,
+    onClick: PropTypes.func,
+    onMouseEnter: PropTypes.func
 }
 export default Button

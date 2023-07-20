@@ -17,7 +17,7 @@ function Header() {
     return (
         <>
             <header className="h-14">
-                <div className="h-14 fixed w-full shadow-md left-0 right-0 top-0">
+                <div className="h-14 fixed bg-white w-full shadow-md left-0 right-0 top-0">
                     <div className="h-full max-w-7xl mx-auto">
                         <div className="h-full flex justify-between items-center">
                             <div className="flex gap-9 items-center">
@@ -36,7 +36,8 @@ function Header() {
                                     </a>)
                                 )}
                                 <Button prefixIcon={"campaign"} size="default" type="primary">Host</Button>
-                                <button>Login</button>
+                                <Button type="secondary" size="default" onClick={()=>{
+                                }} >Login</Button>
                                 {iconsListTwo.map((item) => 
                                     (<a key={item.icon} href="" className="flex items-center justify-center">
                                         <Icon size="large" fill className="text-primary">{item.icon}</Icon>
