@@ -19,13 +19,13 @@ function ClientList() {
     "loreal",
   ];
   return (
-    <section className="left-0 w-full mb-24 pl-10 py-6 border-y border-gray-400 border-solid">
+    <section className="w-full mb-24 pl-10 py-6 border-y border-gray-400 border-solid">
       <div className="flex gap-8">
         <div className="flex flex-col shrink-0">
           <span className="text-primary text-lg">Industry Veterans</span>
           <span className="text-primary font-bold text-lg">trust us:</span>
         </div>
-        <OwlCarousel className="shrink-1">
+        <OwlCarousel controls={false} className="shrink-1">
           {list.map((item) => (
             <OwlCarouselItem className="w-40 h-16 mr-5" key={item}>
               <img
