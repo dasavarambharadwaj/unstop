@@ -1,14 +1,13 @@
-import './App.css'
-import Home from './pages/home/Home'
-import Header from './components/header/Header'
-
+import "./App.css";
+import Header from "./components/header/Header";
+import AppRouter from "./routes/AppRouter";
 function App() {
   return (
     <>
       <Header></Header>
-      <Home></Home>
+      <AppRouter></AppRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
