@@ -15,7 +15,7 @@ function MainEventsCarousel() {
           <OwlCarouselItem className="mr-3 w-[524px] h-[204px]" key={item}>
             <img
               className="h-full m-auto rounded-2xl"
-              src={`/public/home/${item}.jpg`}
+              src={`/home/${item}.jpg`}
             ></img>
           </OwlCarouselItem>
         ))}

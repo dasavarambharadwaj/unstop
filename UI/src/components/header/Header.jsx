@@ -19,13 +19,13 @@ function Header() {
   return (
     <>
       <header className="h-14">
-        <div className="h-14 fixed bg-white w-full shadow-md left-0 right-0 top-0">
+        <div className="h-14 z-10 fixed bg-white w-full shadow-md left-0 right-0 top-0">
           <div className="h-full max-w-7xl mx-auto">
             <div className="h-full flex justify-between items-center">
               <div className="flex gap-9 items-center">
                 <div>
                   <img
-                    src="public/common/logo.svg"
+                    src="/common/logo.svg"
                     width={82}
                     alt="Unstop logo"
                     loading="lazy"

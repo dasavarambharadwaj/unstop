@@ -38,7 +38,7 @@ function Home() {
                   key={text}
                   className="relative w-40 duration-300 hover:-translate-y-4 rounded-lg"
                 >
-                  <img alt={text} src={`../../public/home/${icon}.jpg`}></img>
+                  <img alt={text} src={`/home/${icon}.jpg`}></img>
                   <span
                     className="absolute left-5 top-5 font-bold text-lg"
                     style={{ color: color }}

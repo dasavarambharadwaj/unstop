@@ -30,7 +30,7 @@ function ClientList() {
             <OwlCarouselItem className="w-40 h-16 mr-5" key={item}>
               <img
                 className="h-4/5 m-auto"
-                src={`/public/companies/${item}.png`}
+                src={`/companies/${item}.png`}
               ></img>
             </OwlCarouselItem>
           ))}
